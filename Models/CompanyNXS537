@@ -1,0 +1,21 @@
+
+using System.ComponentModel.DataAnnotations;
+
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace NguyenXuanSon537.Models
+{
+    [Table("Companys")]
+    public class CompanyNXS537
+    {
+        [Key]
+        [StringLength(20)]
+        [Display(Name = "Mã")]
+        [Required]
+        public string CompanyId { get; set; }
+        [StringLength(50)]
+        [Display(Name = "Tên")]
+        [Required]
+        public string CompanyName { get; set; }
+    }
+}
